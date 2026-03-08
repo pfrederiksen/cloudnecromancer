@@ -1,0 +1,24 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+    "arn": "arn:aws:iam::123456789012:user/admin",
+    "accountId": "123456789012",
+    "userName": "admin"
+  },
+  "eventTime": "2025-11-15T20:00:00Z",
+  "eventSource": "s3.amazonaws.com",
+  "eventName": "DeleteBucket",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "203.0.113.50",
+  "userAgent": "aws-cli/2.13.0",
+  "requestParameters": {
+    "bucketName": "my-app-data-bucket",
+    "Host": "my-app-data-bucket.s3.amazonaws.com"
+  },
+  "responseElements": null,
+  "eventID": "evt-s3-delete-bucket-001",
+  "eventType": "AwsApiCall",
+  "recipientAccountId": "123456789012"
+}

@@ -1,0 +1,33 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+    "arn": "arn:aws:iam::123456789012:user/admin",
+    "accountId": "123456789012",
+    "userName": "admin"
+  },
+  "eventTime": "2025-11-15T10:00:00Z",
+  "eventSource": "iam.amazonaws.com",
+  "eventName": "CreateRole",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "203.0.113.50",
+  "userAgent": "aws-cli/2.13.0",
+  "requestParameters": {
+    "roleName": "my-service-role",
+    "assumeRolePolicyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"lambda.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}",
+    "path": "/"
+  },
+  "responseElements": {
+    "role": {
+      "roleName": "my-service-role",
+      "roleId": "AROA3XFRBF23EJQD5ROLE1",
+      "arn": "arn:aws:iam::123456789012:role/my-service-role",
+      "path": "/",
+      "createDate": "2025-11-15T10:00:00Z"
+    }
+  },
+  "eventID": "evt-iam-create-role-001",
+  "eventType": "AwsApiCall",
+  "recipientAccountId": "123456789012"
+}

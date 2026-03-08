@@ -1,0 +1,42 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "AssumedRole",
+    "principalId": "AROA3XFRBF23EJQD5EXAMPLE:session-name",
+    "arn": "arn:aws:sts::123456789012:assumed-role/Admin/session-name",
+    "accountId": "123456789012"
+  },
+  "eventTime": "2025-11-15T11:00:00Z",
+  "eventSource": "lambda.amazonaws.com",
+  "eventName": "CreateFunction20150331",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "203.0.113.50",
+  "userAgent": "aws-cli/2.13.0",
+  "requestParameters": {
+    "functionName": "my-processor-function",
+    "runtime": "python3.12",
+    "handler": "index.handler",
+    "role": "arn:aws:iam::123456789012:role/my-service-role",
+    "code": {
+      "s3Bucket": "lambda-deploy-bucket",
+      "s3Key": "my-processor-function.zip"
+    },
+    "memorySize": 256,
+    "timeout": 30
+  },
+  "responseElements": {
+    "functionName": "my-processor-function",
+    "functionArn": "arn:aws:lambda:us-east-1:123456789012:function:my-processor-function",
+    "runtime": "python3.12",
+    "role": "arn:aws:iam::123456789012:role/my-service-role",
+    "handler": "index.handler",
+    "codeSize": 1024,
+    "memorySize": 256,
+    "timeout": 30,
+    "version": "$LATEST",
+    "state": "Active"
+  },
+  "eventID": "evt-lambda-create-001",
+  "eventType": "AwsApiCall",
+  "recipientAccountId": "123456789012"
+}

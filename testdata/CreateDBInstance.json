@@ -1,0 +1,38 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+    "arn": "arn:aws:iam::123456789012:user/admin",
+    "accountId": "123456789012",
+    "userName": "admin"
+  },
+  "eventTime": "2025-11-15T12:00:00Z",
+  "eventSource": "rds.amazonaws.com",
+  "eventName": "CreateDBInstance",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "203.0.113.50",
+  "userAgent": "aws-cli/2.13.0",
+  "requestParameters": {
+    "dBInstanceIdentifier": "my-app-db",
+    "engine": "postgres",
+    "dBInstanceClass": "db.t3.medium",
+    "allocatedStorage": 100,
+    "masterUsername": "admin",
+    "masterUserPassword": "****",
+    "vpcSecurityGroupIds": ["sg-0123456789abcdef0"],
+    "dBSubnetGroupName": "my-subnet-group",
+    "multiAZ": false,
+    "storageType": "gp3"
+  },
+  "responseElements": {
+    "dBInstanceIdentifier": "my-app-db",
+    "dBInstanceClass": "db.t3.medium",
+    "engine": "postgres",
+    "dBInstanceStatus": "creating",
+    "dBInstanceArn": "arn:aws:rds:us-east-1:123456789012:db:my-app-db"
+  },
+  "eventID": "evt-rds-create-001",
+  "eventType": "AwsApiCall",
+  "recipientAccountId": "123456789012"
+}

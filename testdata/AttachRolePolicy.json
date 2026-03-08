@@ -1,0 +1,24 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDACKCEVSQ6C2EXAMPLE",
+    "arn": "arn:aws:iam::123456789012:user/admin",
+    "accountId": "123456789012",
+    "userName": "admin"
+  },
+  "eventTime": "2025-11-15T10:05:00Z",
+  "eventSource": "iam.amazonaws.com",
+  "eventName": "AttachRolePolicy",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "203.0.113.50",
+  "userAgent": "aws-cli/2.13.0",
+  "requestParameters": {
+    "roleName": "my-service-role",
+    "policyArn": "arn:aws:iam::aws:policy/AWSLambdaBasicExecutionRole"
+  },
+  "responseElements": null,
+  "eventID": "evt-iam-attach-policy-001",
+  "eventType": "AwsApiCall",
+  "recipientAccountId": "123456789012"
+}

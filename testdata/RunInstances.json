@@ -1,0 +1,54 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "AssumedRole",
+    "principalId": "AROA3XFRBF23EJQD5EXAMPLE:session-name",
+    "arn": "arn:aws:sts::123456789012:assumed-role/Admin/session-name",
+    "accountId": "123456789012"
+  },
+  "eventTime": "2025-11-15T14:23:45Z",
+  "eventSource": "ec2.amazonaws.com",
+  "eventName": "RunInstances",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "203.0.113.50",
+  "userAgent": "console.ec2.amazonaws.com",
+  "requestParameters": {
+    "instancesSet": {
+      "items": [
+        {
+          "imageId": "ami-0abcdef1234567890",
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    },
+    "instanceType": "t3.micro",
+    "subnetId": "subnet-0bb1c79de3EXAMPLE",
+    "monitoring": {
+      "enabled": false
+    }
+  },
+  "responseElements": {
+    "requestId": "req-12345678",
+    "reservationId": "r-0a1b2c3d4e5f6g7h8",
+    "instancesSet": {
+      "items": [
+        {
+          "instanceId": "i-0abc123def456ghij",
+          "imageId": "ami-0abcdef1234567890",
+          "instanceType": "t3.micro",
+          "subnetId": "subnet-0bb1c79de3EXAMPLE",
+          "vpcId": "vpc-0123456789abcdef0",
+          "instanceState": {
+            "code": 0,
+            "name": "pending"
+          },
+          "privateIpAddress": "10.0.1.50"
+        }
+      ]
+    }
+  },
+  "eventID": "evt-run-001",
+  "eventType": "AwsApiCall",
+  "recipientAccountId": "123456789012"
+}
