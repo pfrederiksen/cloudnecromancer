@@ -20,6 +20,13 @@ Given any historical timestamp, CloudNecromancer resurrects every resource that 
 
 ## Install
 
+### Homebrew (macOS / Linux)
+
+```bash
+brew tap pfrederiksen/tap
+brew install cloudnecromancer
+```
+
 ### From release binaries
 
 Download the latest release for your platform from [Releases](https://github.com/pfrederiksen/cloudnecromancer/releases).
@@ -29,6 +36,8 @@ Download the latest release for your platform from [Releases](https://github.com
 ```bash
 go install github.com/pfrederiksen/cloudnecromancer@latest
 ```
+
+> **Note:** Requires CGO and DuckDB C library headers (`build-essential` on Linux).
 
 ### Build locally
 

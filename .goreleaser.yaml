@@ -8,20 +8,13 @@ builds:
     goos:
       - linux
       - darwin
-      - windows
     goarch:
       - amd64
       - arm64
-    ignore:
-      - goos: windows
-        goarch: arm64
 
 archives:
   - format: tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
-    format_overrides:
-      - goos: windows
-        format: zip
 
 checksum:
   name_template: "checksums.txt"
@@ -32,3 +25,16 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+
+brews:
+  - repository:
+      owner: pfrederiksen
+      name: homebrew-tap
+    directory: Formula
+    homepage: "https://github.com/pfrederiksen/cloudnecromancer"
+    description: "Reconstruct point-in-time AWS infrastructure snapshots by replaying CloudTrail events"
+    license: "MIT"
+    test: |
+      system "#{bin}/cloudnecromancer", "--quiet", "--help"
+    install: |
+      bin.install "cloudnecromancer"
