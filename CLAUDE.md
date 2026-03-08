@@ -1,7 +1,7 @@
 # CloudNecromancer
 
 ## Project Overview
-CLI tool that reconstructs point-in-time AWS infrastructure snapshots by replaying CloudTrail events. Written in Go 1.22+.
+CLI tool that reconstructs point-in-time AWS infrastructure snapshots by replaying CloudTrail events. Written in Go 1.25+.
 
 ## Build & Test
 ```bash
@@ -44,6 +44,12 @@ make lint     # golangci-lint run
 - `pulumi` — Pulumi TypeScript program
 - `ocsf` — OCSF Inventory Info (NDJSON)
 - `csv` — Splunk lookup table
+
+## Release
+- Tag `vX.Y.Z` → triggers `.github/workflows/release.yml`
+- Builds native binaries: linux/amd64, darwin/amd64, darwin/arm64
+- Auto-publishes Homebrew formula to `pfrederiksen/homebrew-tap`
+- Secret `HOMEBREW_TAP_GITHUB_TOKEN` required for tap push
 
 ## Code Quality
 - No `panic` in library code

@@ -31,6 +31,11 @@ brew install cloudnecromancer
 
 Download the latest release for your platform from [Releases](https://github.com/pfrederiksen/cloudnecromancer/releases).
 
+| Platform | Architecture |
+|----------|-------------|
+| macOS | Intel (amd64), Apple Silicon (arm64) |
+| Linux | amd64 |
+
 ### From source
 
 ```bash
